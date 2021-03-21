@@ -1,0 +1,257 @@
+    /* CSS Reset */
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+     :root {
+        --navbar-height: 59px;
+    }
+    
+    #logo {
+        margin: 10px 34px;
+    }
+    
+    #logosize {
+        height: 50px;
+        width: 50px;
+    }
+    /* Navbar Settings */
+    
+    #navbar {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    #navbar ul {
+        display: flex;
+        font-size: 1.1rem;
+    }
+    
+    #navbar::before {
+        content: "";
+        background-color: rgb(31, 144, 236);
+        position: absolute;
+        height: 120%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    #navbar ul li {
+        list-style: none;
+    }
+    
+    #navbar ul li a {
+        color: rgb(7, 7, 7);
+        display: block;
+        padding: 3px 15px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover {
+        background-color: rgb(204, 204, 198);
+        font-weight: bold;
+    }
+    /* Home Section */
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 500Px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home::before {
+        padding-top: 10px;
+        content: "";
+        /* background          : url('../img/bg2.jpg') no-repeat center center / cover; */
+        background: url('../img/bg4.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.90;
+    }
+    
+    #home h1 {
+        color: rgb(3, 3, 3);
+        text-align: center;
+    }
+    
+    .h-primary {
+        color: cornsilk;
+        font-size: 2.5rem;
+        margin-top: -110px;
+    }
+    
+    h1.h-secondary {
+        font-size: 2.8rem;
+        padding-top: 40px;
+    }
+    
+    #home p {
+        color: 060606;
+        text-align: center;
+        font-size: 1rem;
+        height: 100px;
+        width: 500px;
+        padding: 30px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    /* Button Section */
+    
+    .btn {
+        padding: 14px 27px;
+        border: 2px solid white;
+        background-color: rgb(136 133 99);
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        font-size: 1.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    
+    .bttn {
+        margin-right: 50px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(252, 78, 78);
+        color: black;
+        font-weight: bold;
+    }
+    
+    .btn a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    /* contact Page */
+    
+    #contact {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 500Px;
+        align-items: center;
+    }
+    
+    #contact::before {
+        content: "";
+        background: url('../img/bg3.jpg') no-repeat center center / cover;
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.90;
+    }
+    
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        border: 3px solid #404751;
+        align-items: center;
+        padding-bottom: 15px;
+        margin-top: 15px;
+        height: 450px;
+        width: 400px;
+        border-radius: 40px;
+    }
+    
+    .form-group {
+        padding-top: 10px;
+        justify-content: center;
+    }
+    
+    #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+    /* #contact-box form {
+    width: 40%;
+} */
+    
+    #contact-box label {
+        font-size: 1.3rem;
+    }
+    
+    input#name {
+        height: 30px;
+        width: 290px;
+    }
+    
+    input#phone {
+        height: 30px;
+        width: 290px;
+    }
+    
+    input#email {
+        height: 30px;
+        width: 290px;
+    }
+    
+    input:focus::placeholder {
+        color: transparent;
+    }
+    /* Contact Button Section */
+    
+    .Cbtn {
+        margin-top: 8px;
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(223 224 204);
+        /* color: rgb(17, 15, 15); */
+        font-size: 1.4rem;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 82px;
+        text-align: center;
+    }
+    
+    .btttn a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        /* margin-top: 5px; */
+    }
+    
+    .Cbtn:hover {
+        background-color: rgb(184, 217, 245);
+        color: rgb(247, 245, 245);
+        font-weight: bold;
+    }
+    
+    footer {
+        background-color: hsla(0, 100%, 70%, 0.3);
+        color: rgb(8, 8, 8);
+        padding: 9px 20px;
+        margin-top: 128px;
+    }
+    
+    .center {
+        text-align: center;
+    }
